@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Roboto';
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /*Propriétés communes - flex*/
@@ -20,22 +20,23 @@ nav {
 
 nav ul {
     flex-direction: row;
-    justify-content: center;
     list-style:none;
+    justify-content: center;
     margin: 0;
-    padding: 0;
+    padding:1.5rem;
 }
 
 nav ul li {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
 }
 
 .nav-link {
     text-align:center;
     text-decoration: none;
-    padding: 1.5rem;
+    padding-left:1rem;
+    padding-right: 1rem;
 }
 
 /*Header*/
@@ -47,7 +48,7 @@ header {
 
 h1 {
     color:rgb(30, 37, 58);
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 800;
     letter-spacing: 0.7rem;
     margin:0;
@@ -59,7 +60,7 @@ h1 {
 
 h2 {
     color:rgb(168, 168, 168);
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top:1rem;
 }
 
@@ -154,8 +155,10 @@ footer {
     height: 10rem;
 }
 
-footer p {
+.text-footer {
     font-size: 14px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 /*Ligne séparatrice horizontale*/
@@ -178,7 +181,7 @@ nav, footer {
     background-color: rgb(18, 40, 54);    
 }
 
-h1, h2, h3, .art-name, .btn-participate, footer p {
+h1, h2, h3, .art-name, .btn-participate, .text-footer {
     text-align: center;
 }
 
@@ -192,6 +195,9 @@ h1, h2, h3, .art-name, .btn-participate, footer p {
     }
     h1 {
         font-size: 7rem;
+    }
+    h2 {
+        font-size: 1.5rem;
     }
     nav {
         height:4.5rem;
@@ -211,6 +217,9 @@ h1, h2, h3, .art-name, .btn-participate, footer p {
     }
     h1 {
         font-size: 10rem;
+    }
+    h2 {
+        font-size: 1.9rem;
     }
     nav {
         height:5rem;
