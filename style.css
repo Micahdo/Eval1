@@ -4,8 +4,8 @@ body {
     font-size: 16px;
 }
 
-/*Propriétés communes - flex*/
-header, footer, .nav-link, .articles, .help, nav ul  {
+/*Propriétés flex communes*/
+header, footer, .articles, .help, nav, .nav-list {
     display:flex;
 }
 
@@ -16,27 +16,23 @@ header, footer, .help {
 /*Barre de navigation*/
 nav {
     height: 4rem;
+    justify-content: center;    
 }
 
-nav ul {
+.nav-list {
     flex-direction: row;
-    list-style:none;
-    justify-content: center;
-    margin: 0;
-    padding:1.5rem;
-}
-
-nav ul li {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 0.6rem;
+    list-style: none;
+    align-items: center;
 }
 
 .nav-link {
-    text-align:center;
     text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.6rem;
     padding-left:1rem;
-    padding-right: 1rem;
+    padding-right: 1rem;    
 }
 
 /*Header*/
@@ -102,8 +98,9 @@ main {
     width:200px;
     padding:15px 25px;
     text-decoration: none;
-    border-radius: 15px;
+    border-radius: 35px;
     transition-duration: 0.2s;
+    font-size: 1.5rem;
 }
 
 .btn-participate:hover {
@@ -119,9 +116,9 @@ article {
     background-color: darkgrey;
     border-radius: 25px;
     box-shadow: 0px 0px 20px hsla(0, 0%, 0%, 0.5);
-    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
+    background-position: top;
 }
 
 .art-name {
@@ -174,7 +171,14 @@ footer {
 }
 
 .nav-link:hover {
-    background-color: rgb(85, 123, 146);
+    border-bottom-style: solid;
+    border-bottom-color: rgb(238, 238, 238);
+    border-bottom-width: 2px;
+    padding-bottom: 0.5rem;
+    border-top-style: solid;
+    border-top-color: rgb(238, 238, 238);
+    border-top-width: 2px;
+    padding-top: 0.5rem;
 }
 
 nav, footer {
@@ -188,7 +192,9 @@ h1, h2, h3, .art-name, .btn-participate, .text-footer {
 /*Taille d'écran de 768px et plus*/
 @media (min-width:768px) {
     .nav-link {
-        font-size: 1.2rem
+        font-size: 1.2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;        
     }
     .art-name {
         font-size: 3rem;
