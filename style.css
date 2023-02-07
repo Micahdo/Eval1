@@ -1,5 +1,5 @@
 /*Propriétés flex communes*/
-body, header, footer, .articles, .help, nav, .nav-list {
+body, header, footer, .articles, .help, .nav-list {
     display:flex;
 }
 
@@ -18,25 +18,28 @@ body {
 }
 
 /*Barre de navigation*/
+
 nav {
-    height: 4rem;
-    justify-content: space-around;
-    align-items: center;
+    height:3rem;
 }
 
 .nav-list {
-    flex-direction: row;
     list-style: none;
+    justify-content: center;
+    margin:0;
+    padding:0;
+}
+
+nav li {
+    padding-top: 1rem;
 }
 
 .nav-link {
-    text-decoration: none;
     text-transform: uppercase;
-    text-align: center;
+    text-decoration: none;
     font-weight: bold;
-    padding-left:1rem;
-    padding-right: 1rem;
-    font-size: calc(8px + 0.5vw);
+    font-size: calc(9px + 1vw);
+    padding: 0.5rem;
 }
 
 /*Header*/
@@ -197,6 +200,9 @@ h1, h2, h3, .art-name, .btn-participate, .text-footer {
     body {
         font-size: 17px;
     }
+    nav {
+        height:3.4rem;
+    }
     .nav-link {
         padding-left: 2rem;
         padding-right: 2rem;        
@@ -210,9 +216,6 @@ h1, h2, h3, .art-name, .btn-participate, .text-footer {
     h2 {
         font-size: 1.5rem;
     }
-    nav {
-        height:4.5rem;
-    }
     .art-text {
         opacity:1;
     }
@@ -223,14 +226,17 @@ h1, h2, h3, .art-name, .btn-participate, .text-footer {
 
 /*Taille d'écran de 1200px et plus*/
 @media (min-width:1200px) {
+    nav {
+        height:3.8rem;
+    }
+    .nav-link {
+        font-size:20px;
+    }
     h1 {
         font-size: 10rem;
     }
     h2 {
         font-size: 1.9rem;
-    }
-    nav {
-        height:5rem;
     }
     main {
         width: 65vw;
