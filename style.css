@@ -20,6 +20,10 @@ body {
 /*Barre de navigation*/
 nav {
     height:3rem;
+    width:100%;
+    position:fixed;
+    top:0;
+    z-index: 2;
 }
 
 .nav-list {
@@ -44,7 +48,6 @@ nav li {
 /*Header*/
 header {
     margin-top: 6rem;
-    margin-bottom: 6rem;
     align-items:center;
 }
 
@@ -77,6 +80,7 @@ main {
     margin:auto;
     width: 75vw;
     line-height: 2rem;
+    margin-top: 4rem;
 }
 
 /*Sections*/
