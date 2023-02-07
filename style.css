@@ -1,11 +1,14 @@
 body {
+    flex-direction: column;
     margin: 0;
     font-family: 'Roboto';
     font-size: 16px;
+    min-height:100vh;
+    min-width: 100vw;
 }
 
 /*Propriétés flex communes*/
-header, footer, .articles, .help, nav, .nav-list {
+body, header, footer, .articles, .help, nav, .nav-list {
     display:flex;
 }
 
@@ -67,6 +70,7 @@ h3 {
 
 /*Main*/
 main {
+    flex-grow: 1;
     margin:auto;
     width: 75vw;
     line-height: 2rem;
